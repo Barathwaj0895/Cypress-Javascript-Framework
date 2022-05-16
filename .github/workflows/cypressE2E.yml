@@ -1,0 +1,84 @@
+# This workflow will do a clean install of node dependencies, cache/restore them, build the source code and run tests across different versions of node
+# For more information see: https://help.github.com/actions/language-and-framework-guides/using-nodejs-with-github-actions
+
+name: Cypress E2E execution on production site
+
+on:
+  workflow_dispatch:
+  
+  # push:
+  #   branches: main
+  # pull_request:
+  #   branches: main
+
+jobs:
+   AutomationExecution:
+    environment: Cypress_Automation_Prod
+    name: Tests Execution
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout the repository
+        uses: actions/checkout@v2
+
+      - name: Install npm packages 
+        run: |
+          npm install
+
+      - name: Create .env file
+        run: |
+          cat > .env
+          echo stripeBearerToken=${{ secrets.PROD_STRIPEBEARERTOKEN }} >> .env
+          echo cognitoUserPoolWebClientID=${{ secrets.PROD_COGNITOUSERPOOLWEBCLIENTID }} >> .env
+          echo challengebypass=${{ secrets.PROD_CHALLENGEBYPASS }} >> .env
+          echo test_mode=${{ secrets.PROD_TEST_MODE }} >> .env
+          echo PRODUCTION_BASE_URL=${{ secrets.PRODUCTION_BASE_URL }} >> .env
+          echo PRODUCTION_CART_SERVICE_BASE_URL=${{ secrets.PRODUCTION_CART_SERVICE_BASE_URL }} >> .env
+          echo AUTHORIZATION_TOKEN=${{ secrets.AUTHORIZATION_TOKEN }} >> .env
+          echo WAF_CHECK=${{ secrets.PROD_WAF_CHECK }} >> .env
+          echo EDITOR_PIN=${{ secrets.EDITOR_PIN }} >> .env
+          echo US_STRIPE_TEST_API_KEY=${{ secrets.US_STRIPE_TEST_API_KEY }} >> .env
+          
+        working-directory: cypress/configFiles/production
+      
+      - name: verify .env file created
+        working-directory: cypress/configFiles/production
+        run: |
+          ls 
+          pwd
+          cat .env
+
+      - name: Verify the cypress is installed
+        run: |
+          npm ci
+          $(npm bin)/cypress verify
+
+      - name: Execute the script
+        run: |
+          pwd
+          npm run test grepTags=Community configFile=production
+      
+      - name: Set Slack success message
+        if: ${{ success() }}
+        run: |
+          echo "SLACK_MESSAGE=:green_heart: *Success! Code commited by ${{ github.actor }}* <https://github.com/${{github.repository}}/commit/${{ github.sha }}|Latest commit> passed in ${{github.repository}}. <https://github.com/${{github.repository}}/actions/runs/${{github.run_id}}|Run details>." >> $GITHUB_ENV
+      - name: Set Slack failure message
+        if: ${{ failure() }}
+        run: |
+          echo "SLACK_MESSAGE=:broken_heart: *Failed! Code commited by ${{ github.actor }}* <https://github.com/${{github.repository}}/commit/${{ github.sha }}|Latest commit> failed in ${{github.repository}}. <https://github.com/${{github.repository}}/actions/runs/${{github.run_id}}|See run details>." >> $GITHUB_ENV
+           
+      - name: Set Slack cancelled message
+        if: ${{ cancelled() }}
+        run: |
+          echo "SLACK_MESSAGE=:no_good: *Cancelled! Code commited by ${{ github.actor }}.* <https://github.com/${{github.repository}}/commit/${{ github.sha }}|Latest commit> was cancelled in ${{github.repository}}. <https://github.com/${{github.repository}}/actions/runs/${{github.run_id}}|Run details>." >> $GITHUB_ENV
+          
+      # based on abinoda/slack-action
+      - name: Send a slack notification
+        if: ${{ always() }}
+        run: |
+          curl -X POST \
+            -H "Content-type: application/json" \
+            -H "Authorization: Bearer $SLACK_BOT_TOKEN" \
+            -d '{ "channel":"#afourtech-test-automation", "username": "GitHub Actions-Prod Env", "icon_emoji": ":github-actions:", "text":"${{ env.SLACK_MESSAGE }}" }' \
+            https://slack.com/api/chat.postMessage
+        env:
+          SLACK_BOT_TOKEN: ${{ secrets.slack_bot_token }}

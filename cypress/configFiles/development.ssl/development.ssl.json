@@ -1,0 +1,8 @@
+{
+    "pageLoadTimeout": 60000,
+    "defaultCommandTimeout": 30000,
+    "serverUrl": "https://local.glossier.io:3000",
+    "baseUrl": "https://local.glossier.io:8000",
+    "awsCognitoUrl": "https://cognito-idp.us-east-1.amazonaws.com/",
+    "retries": 0
+}

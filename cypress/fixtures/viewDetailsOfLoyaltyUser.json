@@ -1,0 +1,20 @@
+[
+    {
+        "email": "capacity-999004-test@glossier.com",
+        "password": "aeshie7Oothaica",
+        "tier": "Glossi-est",
+        "badge_name": "Capacity",
+        "profile_name": "Capacity Test2",
+        "profile_member_since": "Member since October 20, 2021",
+        "member_since": "Member since Oct 20, 2021",
+        "points": "1,400 pts",
+        "next_level_tier_message": "Glossiest tier reached",
+        "spendable_amount": "$20 (400 points)"
+    },
+    {
+        "title": "Enroll as an Existing User in US with less than 100 spendable points",
+        "email": "capacity-999001-test@glossier.com",
+        "password": "aeshie7Oothaica",
+        "tier": "Glossy"
+    }
+]

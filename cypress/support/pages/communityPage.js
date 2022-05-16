@@ -1,0 +1,28 @@
+export const getUsername_label = () => cy.get('div[data-testid="navbar-username"]')
+export const getPostCard_panel = () => cy.get('div[class*="PostCard"]')
+export const getFeedEnds_div = 'div[class*="StyledFeedEnd"] > div > h2[class^="Heading"]'
+export const getJumpToTop_btn = () => cy.get('button[class*="JumpToTopButton"]')
+export const getCreatePost_btn = () => cy.get('button[aria-label="Create a Post"]')
+export const getModelViewContainer_div = () => cy.get('div[data-testid="modal-content"]')
+export const getPostCommentContainer_div = () => cy.get('div[data-testid="brunch-expanded-post-comments-container"]')
+export const getClosePostView_btn = () => cy.get('button[aria-label="Close"][type="button"]')
+export const getLikeUnlike_btn = (choice) => cy.get(`button[aria-label="${choice}"][type="button"]`)
+export const getCommentInView_textarea = () => cy.get('textarea[id="brunch-create-comment-text"]')
+export const getPostCommentInView_btn = () => cy.get('button[aria-label="submit comment button"]')
+export const getDeleteComment_header = () => cy.get('header[class^="StyledConfirmHeader"]')
+export const getLike_btn_locator = 'button[aria-label="like"][type="button"]'
+export const getUnLike_btn_locator = 'button[aria-label="unlike"][type="button"]'
+export const getPostThePost_btn = () => cy.get('button[data-testid="post-creation-submit-button"]')
+export const getAddPhoto_btn = () => cy.get('form > div > div > button[class^="StyledButtonBlock"]')
+export const getUploadFile_btn = () => cy.get('input[id="file-upload"]')
+export const getSavePhoto_btn = () => cy.get('button[aria-label="Back"] + button')
+export const getUploadedImage_img = () => cy.get('img[class^="reactEasyCrop_Image"]')
+export const getImageUploaded_img = () => cy.get('picture > img')
+export const getProfileInfoCard_div = () => cy.get('div[data-testid="profile-info-card-parent"]')
+export const getPostTextContent_h5 = () => cy.get('button[aria-label^="display post"] > h5')
+export const getlatestPostTime_span = () => cy.get('div[data-testid="time-component-parent"] > span')
+export const getPostTitle_textarea = () => cy.get('textarea[id="posts-creation-title"]')
+export const getDeletePost_btn = () => cy.get('button[data-testid="delete-post-button"]')
+export const getDeletePostDialog_div = () => cy.get('div[data-testid="modal-content"]')
+export const getImageInFeed_div = () => cy.get('div[class^="StyledPostImage"]')
+export const getGloblFeedComment_btn_locator = 'button[aria-label^="display post"]'

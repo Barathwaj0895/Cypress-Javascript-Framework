@@ -1,0 +1,16 @@
+[{
+    "email": "capacity-999002-test@glossier.com",
+    "password": "aeshie7Oothaica",
+    "spendablePoints": "100"
+},
+{
+    "email": "capacity-999003-test@glossier.com",
+    "password": "aeshie7Oothaica",
+    "tier": "Glossi-est",
+    "spendablePoints": "200"
+},
+{
+    "email": "capacity-999004-test@glossier.com",
+    "password": "aeshie7Oothaica",
+    "spendablePoints": "400"
+}]

@@ -1,0 +1,24 @@
+{
+  "US": {
+    "locale": "United States",
+    "firstName": "Joe",
+    "lastName": "GlossierQA",
+    "address1": "233 Spring St",
+    "zipCode": "10013",
+    "city": "New York",
+    "phone": "2125551234",
+    "state": "32",
+    "countryCode": "US"
+  },
+  "UK": {
+    "locale": "United Kingdom",
+    "firstName": "Glossierqa",
+    "lastName": "Tester",
+    "address1": "Buckingham Palace Road",
+    "zipCode": "SW1A 1AA",
+    "city": "London",
+    "phone": "2125551234",
+    "state": "Greater London",
+    "countryCode": "GB"
+  }
+}

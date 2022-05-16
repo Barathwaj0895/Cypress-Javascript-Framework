@@ -1,0 +1,8 @@
+{
+  "pageLoadTimeout": 90000,
+  "defaultCommandTimeout": 60000,
+  "serverUrl": "https://www.glossier.com/",
+  "baseUrl": "https://www.glossier.com/",
+  "awsCognitoUrl": "https://www.glossier.com/proxy/auth",
+  "retries": 0
+}

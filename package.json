@@ -1,0 +1,45 @@
+{
+  "name": "cypressrepo",
+  "version": "1.0.0",
+  "description": "End to end automated flows",
+  "main": "index.js",
+  "scripts": {
+    "clean:reports": "node ./cypress/mkdir_for_reportgen.js",
+    "pretest": "npm run clean:reports",
+    "test": "node ./cypress/test_run.js",
+    "combine-reports": "mochawesome-merge cypress/reports/mocha/*.json > cypress/reports/mochareports/report.json",
+    "reportWrapper": "node ./cypress/reportWrapper.js",
+    "generate-report": "marge cypress/reports/mochareports/report.json -f report -o cypress/reports/mochareports  --inline ",
+    "emailing-reports": "node ./cypress/ci_email_report.js",
+    "posttest": "npm run combine-reports && npm run reportWrapper && npm run generate-report && npm run emailing-reports && node ./cypress/archivingReports.js "
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/glossier/CypressAutomation.git"
+  },
+  "author": "Glossier",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/glossier/CypressAutomation/issues"
+  },
+  "homepage": "https://github.com/glossier/CypressAutomation#readme",
+  "keywords": [],
+  "devDependencies": {
+    "cypress": "^9.2.0",
+    "cypress-file-upload": "^5.0.8",
+    "cypress-grep": "^2.5.3",
+    "cypress-localstorage-commands": "^1.5.0",
+    "cypress-multi-reporters": "^1.5.0",
+    "cypress-promise": "^1.1.0",
+    "dotenv": "^10.0.0",
+    "mocha": "^9.1.3",
+    "mochawesome": "^6.2.2",
+    "mochawesome-merge": "^4.2.0",
+    "mochawesome-report-generator": "^5.2.0"
+  },
+  "dependencies": {
+    "archiver": "^5.3.0",
+    "nodemailer": "^6.7.2",
+    "nodemailer-sendgrid-transport": "^0.2.0"
+  }
+}

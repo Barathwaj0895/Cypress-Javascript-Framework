@@ -1,0 +1,10 @@
+{
+    "card": {
+        "amount": "$100",
+        "delivery": "Email to Recipient on a Date",
+        "recipientName": "Glossier Automation",
+        "purchaserName": "Glossier Automation",
+        "recipientEmail": "admin@glossier.com",
+        "giftCardMessage" : "Test Message : Greeting from Glossier"
+    }
+}

@@ -1,0 +1,25 @@
+[
+    {
+        "title": "New User Creation and enrollment to Loyalty Program with Zero spendable points",
+        "password": "aeshie7Oothaica",
+        "tier": "Glossy"
+    },
+    {
+        "title": "Enroll as an Existing User in US with 100 in tier-qualifying spend",
+        "email": "capacity-999002-test@glossier.com",
+        "password": "aeshie7Oothaica",
+        "tier": "Glossi-er",
+        "spendableAmount": "$5 (100 points)",
+        "spendablePoints": "100",
+        "firstName": "Loyalty TestUser "
+    },
+    {
+        "title": "Enroll as an Existing User in US with 200 in tier-qualifying spend",
+        "email": "capacity-999003-test@glossier.com",
+        "password": "aeshie7Oothaica",
+        "tier": "Glossi-est",
+        "spendableAmount": "$10 (200 points)",
+        "spendablePoints": "200",
+        "firstName": "Loyalty TestUser "
+    }
+]

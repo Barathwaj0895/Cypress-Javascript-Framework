@@ -1,0 +1,128 @@
+{
+    "getMessages": {
+        "messages": [
+            {
+                "contentId": "campaign-45cb9ec8-d8f8-11eb-856d-7832739315af",
+                "expiresAt": "Wed Jul 31 2030 16:37:19 GMT+0000 (Coordinated Universal Time)"
+            },
+            {
+                "contentId": "campaign-ab2d54e6-f563-11eb-8749-5cb8628da34d",
+                "expiresAt": "Sun Sep 04 2050 21:36:00 GMT+0000 (Coordinated Universal Time)"
+            },
+            {
+                "contentId": "campaign-99812e8a-5840-11ec-8aff-e04589909ebf",
+                "expiresAt": "Sat Jan 08 2022 16:05:01 GMT+0000 (Coordinated Universal Time)"
+            },
+            {
+                "contentId": "campaign-1bdfa3de-5ebd-11ec-9e84-05be89909ebf",
+                "expiresAt": "Mon Jan 31 2022 22:11:25 GMT+0000 (Coordinated Universal Time)"
+            }
+        ]
+    },
+    "getOffer": {
+        "discount": {
+            "amount": 1000,
+            "currency": "USD",
+            "type": "flatRate"
+        },
+        "display": {
+            "title": "US GCash $10"
+        },
+        "points": 200,
+        "type": "gcash",
+        "id": "8490384b-8cf5-4e98-ab44-9cc2f108de09"
+    },
+    "getOffers": {
+        "offers": {
+            "21525c6f-0722-40e4-a206-866b05471c40": {
+                "discount": {
+                    "amount": 1000,
+                    "currency": "USD",
+                    "type": "flatRate"
+                },
+                "display": {
+                    "title": "$10 (200 points)"
+                },
+                "points": 200,
+                "type": "gcash",
+                "id": "21525c6f-0722-40e4-a206-866b05471c40"
+            },
+            "bd403e95-7dcc-4970-a98c-7e2821c9385d": {
+                "discount": {
+                    "amount": 1000,
+                    "currency": "USD",
+                    "type": "flatRate"
+                },
+                "display": {
+                    "title": "$10 (200 points)"
+                },
+                "points": 200,
+                "type": "gcash",
+                "id": "bd403e95-7dcc-4970-a98c-7e2821c9385d"
+            },
+            "a2c6507c-1754-4fc5-9b3d-b4de308bbbf3": {
+                "discount": {
+                    "amount": 1500,
+                    "currency": "USD",
+                    "type": "flatRate"
+                },
+                "display": {
+                    "title": "$15 (300 points)"
+                },
+                "points": 300,
+                "type": "gcash",
+                "id": "a2c6507c-1754-4fc5-9b3d-b4de308bbbf3"
+            },
+            "8d485bbd-9e73-47b2-b03e-6c6eae771d56": {
+                "discount": {
+                    "amount": 2000,
+                    "currency": "USD",
+                    "type": "flatRate"
+                },
+                "display": {
+                    "title": "$20 (400 points)"
+                },
+                "points": 400,
+                "type": "gcash",
+                "id": "8d485bbd-9e73-47b2-b03e-6c6eae771d56"
+            },
+            "18852559-29ef-4919-b701-c959e5f4df5a": {
+                "discount": {
+                    "amount": 500,
+                    "currency": "USD",
+                    "type": "flatRate"
+                },
+                "display": {
+                    "title": "$5 (100 points)"
+                },
+                "points": 100,
+                "type": "gcash",
+                "id": "18852559-29ef-4919-b701-c959e5f4df5a"
+            }
+        },
+        "gcashOfferIdsSortedByPointsAsc": [
+            "18852559-29ef-4919-b701-c959e5f4df5a",
+            "21525c6f-0722-40e4-a206-866b05471c40",
+            "bd403e95-7dcc-4970-a98c-7e2821c9385d",
+            "a2c6507c-1754-4fc5-9b3d-b4de308bbbf3",
+            "8d485bbd-9e73-47b2-b03e-6c6eae771d56"
+        ]
+    },
+    "viewProfile": {
+        "memberSince": "2021-10-20 15:45:53",
+        "level": 3,
+        "customerId": "1c60097e-5d38-4e36-bfdb-c6f3a2aab720",
+        "sessionmUserId": "ce8bb294-31bc-11ec-9317-8c362e81f057",
+        "country": "US",
+        "tierProgress": 1,
+        "pointsToNextTier": 0
+    },
+    "redeemOffer": {
+        "discount": {
+            "amount": 1000,
+            "currency": "USD",
+            "type": "flatRate"
+        },
+        "pointsSpent": 200
+}
+}

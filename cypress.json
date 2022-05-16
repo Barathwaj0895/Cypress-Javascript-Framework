@@ -1,0 +1,33 @@
+{
+  "projectId": "jjtth2",
+  "pageLoadTimeout": 120000,
+  "defaultCommandTimeout": 50000,
+  "chromeWebSecurity": false,
+  "serverUrl": "http://localhost:8000",
+  "baseUrl": "http://localhost:8000",
+  "video": false,
+  "viewportWidth": 1440,
+  "viewportHeight": 900,
+  "env": {
+    "test_mode": "",
+    "incognito": "",
+    "device": "",
+    "grepFilterSpecs": true,
+    "grepOmitFiltered": true
+  },
+  "retries": 2,
+  "reporter": "cypress-multi-reporters",
+  "reporterOptions": {
+    "reporterEnabled": "mochawesome",
+    "mochawesomeReporterOptions": {
+      "reportDir": "cypress/reports/mocha",
+      "quite": true,
+      "overwrite": false,
+      "html": false,
+      "json": true,
+      "timestamp": "mmddyy_HHMMss"
+    }
+  },
+  "screenshotOnRunFailure": true,
+  "screenshotsFolder": "cypress/reports/mochareports/assets"
+}

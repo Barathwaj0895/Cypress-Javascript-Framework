@@ -1,0 +1,8 @@
+{
+    "pageLoadTimeout": 60000,
+    "defaultCommandTimeout": 30000,
+    "serverUrl": "http://localhost:3000",
+    "baseUrl": "http://localhost:8000",
+    "awsCognitoUrl": "https://cognito-idp.us-east-1.amazonaws.com/",
+    "retries": 0
+}

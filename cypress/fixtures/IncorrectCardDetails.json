@@ -1,0 +1,55 @@
+[
+  {
+    "title":" Invalid card number ",
+    "number": "4242424242424241",
+    "expiryDate": "1025",
+    "zipCode": "10013",
+    "cvc": "143",
+    "ErrorMessage": "Your card number is invalid."
+  },
+
+  {
+    "title":" Expired card ",
+    "number": "4000000000000069",
+    "expiryDate": "1220",
+    "zipCode": "10013",
+    "cvc": "143",
+    "ErrorMessage": "Your card's expiration year is in the past." 
+  },
+
+  {
+    "title":" Invalid cvc code ",
+    "number": "4000000000000127",
+    "expiryDate": "1025",
+    "zipCode": "10013",
+    "cvc": "99",
+    "ErrorMessage": "Your card's security code is incomplete." 
+  },
+
+  {
+    "title":"Declined card- insufficient funds",
+    "number": "4000000000009995",
+    "expiryDate": "1025",
+    "zipCode": "10013",
+    "cvc": "999",
+    "ErrorMessage": "Your card has insufficient funds." 
+  },
+
+  {
+    "title":"Declined card- Lost Card",
+    "number": "4000000000009987",
+    "expiryDate": "1025",
+    "zipCode": "10013",
+    "cvc": "235",
+    "ErrorMessage": "Your card was declined." 
+  },
+
+  {
+    "title":"Declined card- stolen card",
+    "number": "4000000000009979",
+    "expiryDate": "1025",
+    "zipCode": "10013",
+    "cvc": "235",
+    "ErrorMessage": "Your card was declined." 
+  }
+]

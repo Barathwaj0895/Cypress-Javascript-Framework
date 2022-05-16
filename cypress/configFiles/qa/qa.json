@@ -1,0 +1,8 @@
+{
+    "pageLoadTimeout": 60000,
+    "defaultCommandTimeout": 30000,
+    "serverUrl": "https://qa.glossier.com/",
+    "baseUrl": "https://qa.glossier.com/",
+    "awsCognitoUrl": "",
+    "retries": 0
+}

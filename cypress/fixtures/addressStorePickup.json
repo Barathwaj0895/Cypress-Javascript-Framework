@@ -1,0 +1,27 @@
+[
+  {
+    "locale": "United States",
+    "firstName": "Joe",
+    "lastName": "GlossierQA",
+    "address1": "233 Spring St",
+    "zipCode": "98122",
+    "city": "Seattle",
+    "phone": "2125551234",
+    "state": "Washington",
+    "countryCode": "US",
+    "storePickup": "should exists"
+
+  },
+  {
+    "locale": "United States",
+    "firstName": "Joe",
+    "lastName": "GlossierQA",
+    "address1": "233 Spring St",
+    "zipCode": "10013",
+    "city": "New York",
+    "phone": "2125551234",
+    "state": "32",
+    "countryCode": "US",
+    "storePickup": "should not exists"
+  }
+]

@@ -1,0 +1,97 @@
+{
+    "items": [
+        {
+            "images": {
+                "thumbnail": {
+                    "alt": null,
+                    "description": null,
+                    "uiHook": "thumbnail",
+                    "urlTemplate": "https://static-assets.glossier.com/production/spree/images/attachments/000/002/143/:style/you_edp.png?1561490959"
+                }
+            },
+            "quantity": 1,
+            "productId": "115",
+            "taxCode": "PH400930",
+            "uuid": "e6a8814a-98dc-4622-a3ef-6f7f33acbca1",
+            "productCategory": "Fragrance",
+            "total": 6000,
+            "shippingCategoryId": 7,
+            "name": "Glossier You",
+            "id": "341",
+            "sku": "EDP-080-00-00",
+            "slug": "glossier-you",
+            "option": {
+                "presentation": null,
+                "cssColor": null
+            }
+        }
+    ],
+    "currency": "USD",
+    "country": "US",
+    "locale": "en-US",
+    "address": {
+        "id": "930a7c73-7466-4696-bb4c-96719564a6a9",
+        "address1": "123 Street",
+        "firstname": "Gloosier Automation",
+        "city": "New York",
+        "zipcode": "10013",
+        "countryId": 49,
+        "stateId": 48
+    },
+    "shipping": {
+        "name": "Standard (5-7 business days)",
+        "cost": 0,
+        "originalCost": 450,
+        "shippingMethodCode": "00FESP",
+        "shippingMethodId": 63,
+        "threshold": 3000,
+        "packaging": "ecommerce_default"
+    },
+    "payment": {
+        "name": "Glossier Automation",
+        "lastDigits": "4242",
+        "month": 9,
+        "year": 2030,
+        "token": "tok_1Jeg7E4i6krgtNow5dWC0Jlk",
+        "methodId": 6,
+        "checkoutType": "quick-pay"
+    },
+    "account": {
+        "anonId": "49243866-65e9-4297-8d0a-a9700739433a",
+        "hasCompletedOrders": false,
+        "email": "glossiertest@glossier.com",
+        "subscribed": false
+    },
+    "giftMessage": null,
+    "isRequestingCart": false,
+    "channel": "ecomm",
+    "error": null,
+    "billingAddress": null,
+    "storedAddress": false,
+    "storedPaymentMethod": false,
+    "outOfStock": null,
+    "totals": {
+        "payment": 0,
+        "total": 0,
+        "netTotal": 0,
+        "shipping": 0,
+        "subtotal": 0,
+        "storeCredit": 0
+    },
+    "isGuestCheckout": false,
+    "source": "local.glossier.io:8000",
+    "reserveWithSfs": false,
+    "throwOnFailedReservation": false,
+    "stateRefactor": false,
+    "device": "tablet",
+    "usePaymentIntents": false,
+    "id": "d78f6cd8-45c3-4dc2-9dc9-6582b453a43d",
+    "timestamps": {
+        "createdAt": 1639733715560,
+        "updatedAt": 1639733715560
+    },
+    "version": 0,
+    "promotion": {},
+    "latest": 1,
+    "expireOn": 1650101715
+}
